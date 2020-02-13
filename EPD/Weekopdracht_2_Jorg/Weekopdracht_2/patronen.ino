@@ -16,3 +16,8 @@ const byte patronen = {
   B10011110, //E
   B10001110  //F
 }
+
+boolean isBitEen (byte pattern, int index) {
+  byte check = 1 << index;
+  return (pattern & check) == check;
+}
