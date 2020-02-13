@@ -1,0 +1,71 @@
+const int INTERVAL = 500;
+unsigned long previosMilles;
+
+const int DS = 8;
+const int SH_CP = 10;
+const int ST_CP = 9; // lacht pin
+
+byte patroon = 1; //B00000001
+
+
+void setup() {
+  // put your setup code here, to run once:
+
+  previosMilles = 0 - INTERVAL;
+
+  pinMode(DS, OUTPUT);
+  pinMode(SH_CP, OUTPUT);
+  pinMode(ST_CP, OUTPUT);
+
+  digitalWrite(DS, LOW);
+  digitalWrite(SH_CP, LOW);
+  digitalWrite(ST_CP, LOW);
+
+  // alles uit
+  digitalWrite(DS, LOW);
+  for ( int i = 0; i < 8; i++) {
+    digitalWrite(SH_CP, HIGH);
+    digitalWrite(SH_CP, LOW);
+  }
+  digitalWrite(ST_CP, HIGH);
+  digitalWrite(ST_CP, LOW);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  unsigned long currentMillis = millis();
+
+  if ( currentMillis - previosMilles >= INTERVAL) {
+    previosMilles = currentMillis;
+
+    // shift register functionaliteit
+
+    for ( int i = 0; i < 8; i++) {
+      if ( isBitSet(patroon, i) == true) {
+        digitalWrite(DS, HIGH);
+      }
+      else {
+        digitalWrite(DS, LOW);
+      }
+      digitalWrite(SH_CP, HIGH);
+      digitalWrite(SH_CP, LOW);
+
+    }
+
+    digitalWrite(ST_CP, HIGH);
+    digitalWrite(ST_CP, LOW);
+
+    patroon = patroon << 1; //B0000010
+
+    if ( patroon == 0) {
+      patroon = 1;
+    }
+
+  }
+  // do something else
+}
+boolean isBitSet(byte pattern, int index) {
+  byte check = B00000001 << index;
+  return  ((pattern & check)  == check);
+}
