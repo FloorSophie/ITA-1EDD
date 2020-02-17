@@ -10,6 +10,7 @@ Klas ITA-1DD of ITA-1E 2019-2020  HAN UNIVERSITY OF APPLIED SCIENCES.
 * **J. v Aalst** - [Coolcatss](https://github.com/Coolcatss)
 * **R. Boudewijn** - [nxttx](https://github.com/nxttx)
 * **J. v Aalst** - [ashleygraceallen](https://github.com/ashleygraceallen)
+* **J. v Kuijk** - [Julianvank](https://github.com/Julianvank)
 
 Mensen die nog niet toegevoegd zijn moeten zichzelf even toevoegen.
 
