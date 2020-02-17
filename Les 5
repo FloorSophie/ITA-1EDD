@@ -1,0 +1,24 @@
+OOPD Les 5
+Opgave 5.2 Student op School
+
+
+
+Onderdeel B
+Leg op basis van deze schets uit wat er fout gaat.
+
+Antwoord
+Dat voor elke student maken wij een new school van de class school. en niet de school die we al eerder hebben gemaakt.
+
+
+
+Onderdeel C
+Lost onderstaande verbetering op regel 4 en 5 aan het hoofdprogramma de fout op?
+
+void setup() {
+  School deSchool = new School("ICA");
+  
+  Student s1 = new Student("hanneke", 1, deSchool);
+  Student s2 = new Student("femke", 2, deSchool);
+}
+
+al opgelost 
