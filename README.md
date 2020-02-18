@@ -8,9 +8,10 @@ Klas ITA-1DD of ITA-1E 2019-2020  HAN UNIVERSITY OF APPLIED SCIENCES.
 
 * **O. Halabi** - [oshalabi](https://github.com/oshalabi)
 * **J. v Aalst** - [Coolcatss](https://github.com/Coolcatss)
-* **R. Boudewijn** - [nxttx](https://github.com/nxttx)
+* **R. Boudewijn** - [nxttx](https://github.com/nxttx) 
 * **A. Grace** - [ashleygraceallen](https://github.com/ashleygraceallen)
 * **J. v Kuijk** - [Julianvank](https://github.com/Julianvank)
+* **F. S. Seegers** - [FloorSophie] (https://github.com/FloorSophie)
 
 Mensen die nog niet toegevoegd zijn moeten zichzelf even toevoegen.
 
